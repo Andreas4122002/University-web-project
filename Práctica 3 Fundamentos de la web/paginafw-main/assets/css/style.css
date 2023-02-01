@@ -1,0 +1,277 @@
+html,
+body {
+    text-align: center;
+    height: 100%;
+}
+
+body {
+    background-image: url(../images/bg2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.neon {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    /*Evitar que se pegue mucho el carrousel*/
+    font-family: Comic Sans MS, sans-serif;
+    transition: text-shadow 0.5s ease 0s;
+    border-radius: 10px;
+}
+
+/* Estilo de los botones de las nav pills */
+
+.nav-pills {
+    justify-content: center;
+}
+
+.tab-pane {
+    color: white;
+}
+
+.nav-pills .nav-link.active {
+    background-color: green;
+}
+
+/*Estilo de los textos del carrusel */
+
+.carousel-item p {
+    color: white;
+}
+
+/*Estilo del acordeón, sus botones y cuerpo */
+
+.accordion {
+    padding-top: 15px;
+}
+
+.accordion-body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    justify-content: center;
+}
+
+.accordion-button {
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+
+
+/*Borde del acordeón negro */
+
+.accordion-item {
+    border: 1px solid rgb(17, 17, 17);
+}
+
+
+/*Acordeón plegado negro */
+
+.accordion-button {
+    font-family: Tahoma;
+    font-size: 30px;
+    color: white;
+    background: black;
+    font-weight: bolder;
+}
+
+
+/*Tono grisaceo en el acordeón desplegado activo */
+
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    background: rgb(17, 17, 17);
+    color: white;
+}
+
+.interior1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.price {
+    color: springgreen;
+}
+
+.comollegar {
+    padding-top: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+p.card-text {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card-title {
+    color: white;
+    font-size: 32px;
+    font-family:'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+
+/*Para que sean responsive las flechas del carousel*/
+
+@media (min-width: 1200px) {
+    .carousel-control-prev {
+        left: -100px;
+    }
+    .carousel-control-next {
+        right: -100px;
+    }
+}
+
+.rating {
+    padding-bottom: 40px;
+}
+
+
+/* Valoraciones en oscuro */
+
+.list-group-item {
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+.list-group-item:hover {
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+.list-group-item.active {
+    background-color: rgb(41, 41, 41);
+    border: 1px solid black;
+}
+
+
+/*Estilo de las valoraciones */
+
+.dias {
+    color: rgb(199, 199, 199);
+    font-style: italic;
+    font-family: serif;
+}
+
+/*Clase reutilizada para la fuente y letra cursiva */
+
+.res {
+    font-family: Tahoma;
+    font-style: italic;
+}
+
+
+/* Botón de salir del modal centrado */
+
+.modal-footer {
+    justify-content: center;
+}
+
+
+/* Estilo de las valoraciones de los platos */
+
+.valoraciones {
+    color: white;
+}
+
+.modal-title {
+    color: white;
+    font-weight: 700;
+}
+
+.modal-content {
+    background-color: black;
+}
+
+p.dias {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 50px;
+    color: snow;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.anim {
+    -moz-transition: color 2s;
+    transition: color 1s;
+}
+
+h2:hover {
+    color: brown;
+}
+
+
+/* Que el header 2 (Información y ofertas) sea responsive */
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 1199px) {
+    h2 {
+        font-size: 50px;
+    }
+}
+
+/*Dimensiones de las fotos de las ofertas */
+
+.fotos {
+    height: 300px;
+    width: 4500px;
+}
+
+/*Estilo de las badges de las ofertas */
+
+#b1,#b2, #b3 {
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+/*Estilo del precio y los botones de las valoraciones*/
+
+.precio {
+    color: white;
+    font-family: Impact,  sans-serif;
+    font-size: 40px;
+    animation: blinker 2s linear infinite;
+}
+
+.vals {
+    font-size: 30px;
+    font-family: Impact, sans-serif;
+}
+
+hr {
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*Estilo del footer */
+
+footer {
+    color: rgb(192, 192, 192);
+    font-style: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+}
